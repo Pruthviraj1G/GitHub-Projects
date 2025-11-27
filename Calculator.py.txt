@@ -1,0 +1,15 @@
+print("\nHere's Your Basic Calculator")
+k = int(input("\nChoose An Operator\n\n1.Multiplication.\n2.Subtraction.\n3.Division.\n4.Addition.\n"))
+a = int(input("Enter First Number : "))
+b = int(input("Enter Second Number : "))
+
+if k == 1:
+    print("Result:", a * b)
+elif k == 2:
+    print("Result:", a - b)
+elif k == 3:
+    print("Result:", a / b)
+elif k == 4:
+    print("Result:", a + b)
+else:
+    print("Invalid Input")

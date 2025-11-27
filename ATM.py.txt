@@ -1,0 +1,16 @@
+print("Here's Your Basic ATM\n")
+
+attempts = 0
+while attempts < 3:
+    pin = int(input("Please Enter Your Pin To Login Your Account\n"))
+    if pin == 6789:
+        dp = int(input("Account Balance : 100000\nEnter The Amount to Withdraw\n"))
+        at = 100000 - dp
+        print(f"Transaction Successfull\n Your Current Balance : {at}")
+        break
+    else:
+        attempts += 1
+        if attempts == 3:
+            print("Your Account Has Been Blocked")
+        else:
+            print("Incorrect Pin")
